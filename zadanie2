@@ -7,13 +7,14 @@ Console.WriteLine($"\nЗадача 27. Cумма цифр в числе");
 {
     static void Main(string[] args)
     {
-        Console.Write("n = ");
-        var n = Convert.ToInt32(Console.ReadLine());
-        var sum = 0;
-        while(n > 0)
+        Console.Write("i = ");
+        int i = Convert.ToInt32(Console.ReadLine());
+        int sum = 0;
+        while(i > 0)
         {
-            sum += n % 10;
-            n /= 10;
+            int num = i % 10;
+            i = i / 10;
+            sum = sum + sum;
         }
         Console.WriteLine(sum);
     }
